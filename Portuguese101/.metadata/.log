@@ -1,0 +1,58 @@
+!SESSION 2017-06-10 22:42:37.392 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-10 22:43:20.892
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ben'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-06-10 22:43:23.125
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\Ben\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-06-10 22:45:13.631
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-06-10 22:46:10.518
+!MESSAGE Error occurred installing server: invalid entry CRC (expected 0x75ff0475 but got 0xd6b99ebc)
+!STACK 0
+java.util.zip.ZipException: invalid entry CRC (expected 0x75ff0475 but got 0xd6b99ebc)
+	at java.util.zip.ZipInputStream.readEnd(ZipInputStream.java:394)
+	at java.util.zip.ZipInputStream.read(ZipInputStream.java:196)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.wst.server.core.internal.InstallableRuntime2.copyWithSize(InstallableRuntime2.java:173)
+	at org.eclipse.wst.server.core.internal.InstallableRuntime2.unzip(InstallableRuntime2.java:331)
+	at org.eclipse.wst.server.core.internal.InstallableRuntime2.install(InstallableRuntime2.java:263)
+	at org.eclipse.jst.server.tomcat.ui.internal.TomcatRuntimeComposite$6.run(TomcatRuntimeComposite.java:227)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jst.server.tomcat.ui 4 2 2017-06-10 22:46:12.712
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jst.server.tomcat.ui".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.server.tomcat.ui.internal.TomcatRuntimeComposite$7.done(TomcatRuntimeComposite.java:239)
+	at org.eclipse.core.internal.jobs.JobListeners$3.notify(JobListeners.java:42)
+	at org.eclipse.core.internal.jobs.JobListeners.doNotify(JobListeners.java:106)
+	at org.eclipse.core.internal.jobs.JobListeners.done(JobListeners.java:144)
+	at org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:694)
+	at org.eclipse.core.internal.jobs.WorkerPool.endJob(WorkerPool.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:72)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-06-10 22:46:12.717
+!MESSAGE Error occurred installing server: invalid entry size (expected 1139712 but got 1139368 bytes)
+!STACK 0
+java.util.zip.ZipException: invalid entry size (expected 1139712 but got 1139368 bytes)
+	at java.util.zip.ZipInputStream.readEnd(ZipInputStream.java:384)
+	at java.util.zip.ZipInputStream.read(ZipInputStream.java:196)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.wst.server.core.internal.InstallableRuntime2.copyWithSize(InstallableRuntime2.java:173)
+	at org.eclipse.wst.server.core.internal.InstallableRuntime2.unzip(InstallableRuntime2.java:331)
+	at org.eclipse.wst.server.core.internal.InstallableRuntime2.install(InstallableRuntime2.java:263)
+	at org.eclipse.jst.server.tomcat.ui.internal.TomcatRuntimeComposite$6.run(TomcatRuntimeComposite.java:227)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
