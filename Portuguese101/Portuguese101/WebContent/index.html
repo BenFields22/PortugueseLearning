@@ -3,16 +3,27 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Portuguese101</title>
+<script type="text/javascript" src="Resources/js/passData.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Resources/css/table.css" />
 </head>
+
 <body>
 	<p>
-		<strong>Hello and welcome to the wonderful world of Portugal!</strong>
+		<strong>Portuguese101!</strong>
 	</p>
-	<form method="POST" action= "ConnectDB.do">
-	<input type="submit" value="Test Database">
-	</form>
-	<br>
-	<img alt="" src="https://www.easyjet.com/en/holidays/shared/images/guides/portugal.jpg"></img>
 	
+	<p>
+		Select a category and press submit to receive words
+		<button onclick="generateTable()">Submit</button>
+	</p>
+	
+	<p id="category">
+	</p>
+	<br>
+	
+	<p id="inside">
+	</p>
+	<br>
 </body>
 </html>

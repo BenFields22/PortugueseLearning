@@ -1,5 +1,6 @@
 package com.ben.app.controller;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -36,14 +37,31 @@ public class ConnectDB extends HttpServlet {
 		try {
 			Class.forName("org.postgresql.Driver");
 			Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/portuguese","postgres","ben");
-			String query = "select count(*) from \"Nouns\"";
+			StringBuffer jb = new StringBuffer();
+			  String line = null;
+			  try {
+			    BufferedReader reader = request.getReader();
+			    while ((line = reader.readLine()) != null)
+			      jb.append(line);
+			  } catch (Exception e) { /*report an error*/ }
+			String Category = jb.toString();
+			//System.out.println(Category);
+			String query = "select \"EnglishNoun\",\"PortugueseNoun\" from \"Nouns\" where \"nounCategory\"='"+Category+"'";
 			PreparedStatement stmt = con.prepareStatement(query);
 			ResultSet Rs = stmt.executeQuery();
+			String table;
+			table="<table><tr><th>English</th><th>Portuguese</th></tr>";
 			while(Rs.next())
 			{
-				System.out.println(Rs.getInt(1));
+				table = table + "<tr><td>"+Rs.getString(1)+"</td>";
+				table = table + "<td>"+Rs.getString(2)+"</td></tr>";
+				//System.out.println(Rs.getString(1).replaceAll("\\s+","")+ " | "+ Rs.getString(2).replaceAll("\\s+",""));
 			}
-			response.setStatus(HttpServletResponse.SC_NO_CONTENT);
+			table = table + "</table>";
+			response.setContentType("test/plain");
+			response.setCharacterEncoding("UTF-8");
+			response.getWriter().write(table);
+					
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
