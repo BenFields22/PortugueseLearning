@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>
+		<strong>Hello and welcome to the wonderful world of Portugal!</strong>
+	</p>
+	<button method="connectDB" action="ConnectDB">Execute Query</button>
+	<br>
+	<img alt="" src="https://www.easyjet.com/en/holidays/shared/images/guides/portugal.jpg"></img>
+	
+</body>
+</html>

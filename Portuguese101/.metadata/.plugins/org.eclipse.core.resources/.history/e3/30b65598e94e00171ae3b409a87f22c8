@@ -1,0 +1,6 @@
+function myFunction(){
+	document.getElementById("inside").innerHTML="Hello again";
+};
+
+var button = document.getElementById("inside");
+button.addEventListener("click", myFunction);

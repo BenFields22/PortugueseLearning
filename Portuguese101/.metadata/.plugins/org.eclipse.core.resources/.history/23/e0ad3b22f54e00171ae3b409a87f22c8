@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+
+<title>Portuguese101</title>
+</head>
+<body>
+
+	<p>
+		<strong>Hello and welcome to the wonderful world of Portugal!</strong>
+	</p>
+	<p id="inside">
+		first
+	</p>
+	<script>
+	function generateTable(){
+		var xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			if(xhr.status ===200){
+				document.getElementById('inside').innerHTML = xhr.responseText;
+			}
+		}
+		
+		xhr.open('POST', 'ConnectDB.do',true);
+		xhr.send(NULL);
+	}
+	</script>
+	<button onclick="generateTable()">test</button>
+	
+	<br>
+	<img alt="" src="https://www.easyjet.com/en/holidays/shared/images/guides/portugal.jpg"></img>
+	
+</body>
+</html>

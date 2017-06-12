@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Portuguese101</title>
+<script type="text/javascript" src="Resources/js/passData.js"></script>
+<link rel="stylesheet" type="text/css" href="Resources/css/table.css" />
+</head>
+
+<body>
+	<p>
+		<strong>Portuguese101!</strong>
+	</p>
+	
+	<p id="inside">
+		first
+	</p>
+	
+	<button onclick="generateTable()">test</button>
+	
+	<br>
+	<img alt="" src="https://www.easyjet.com/en/holidays/shared/images/guides/portugal.jpg"></img>
+	
+</body>
+</html>

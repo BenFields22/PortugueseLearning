@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript" src="resources/js/passData.js"></script>
+<title>Portuguese101</title>
+</head>
+<body>
+	<p>
+		<strong>Hello and welcome to the wonderful world of Portugal!</strong>
+	</p>
+	<button onclick="test()">Test Database</button>
+	<script>
+function test() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+	<p id="inside">
+		first
+	</p>
+	<br>
+	<img alt="" src="https://www.easyjet.com/en/holidays/shared/images/guides/portugal.jpg"></img>
+	
+</body>
+</html>

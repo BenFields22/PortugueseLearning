@@ -1,0 +1,7 @@
+/**
+ * 
+ */
+
+document.getElementById("test").addEventListener("click", function(){
+	document.getElementById("content").innerHTML = "Hello again";
+});

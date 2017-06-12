@@ -1,0 +1,6 @@
+var button = document.getElementById("me");
+button.addEventListener("onclick", test);
+
+function test(){
+	document.getElementById("inside").innerHTML = "YOU CLICKED ME!";
+}

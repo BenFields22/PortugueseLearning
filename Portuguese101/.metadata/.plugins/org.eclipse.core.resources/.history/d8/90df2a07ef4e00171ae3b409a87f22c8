@@ -1,0 +1,4 @@
+
+function test(){
+	document.getElementById("inside").innerHTML = "YOU CLICKED ME!";
+}

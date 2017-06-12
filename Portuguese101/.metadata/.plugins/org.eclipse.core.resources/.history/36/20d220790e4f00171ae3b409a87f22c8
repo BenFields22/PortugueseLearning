@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Portuguese101</title>
+<script type="text/javascript" src="Resources/js/passData.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Resources/css/table.css" />
+</head>
+
+<body>
+	<p>
+		<strong>Portuguese101!</strong>
+	</p>
+	
+	<p>Select a category and press submit to receive words</p>
+	<button onclick="generateTable()">Submit</button>
+	<p id="category">
+	</p>
+	<br>
+	
+	<p id="inside">
+	</p>
+	
+	
+	
+	
+	<br>
+	
+</body>
+</html>

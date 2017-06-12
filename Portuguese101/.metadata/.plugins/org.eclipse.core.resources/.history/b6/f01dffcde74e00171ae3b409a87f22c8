@@ -1,0 +1,5 @@
+function myFunction(){
+	document.getElementById("content").innerHTML="Hello again";
+};
+
+document.getElementById("test").addEventListener("click", myFunction);

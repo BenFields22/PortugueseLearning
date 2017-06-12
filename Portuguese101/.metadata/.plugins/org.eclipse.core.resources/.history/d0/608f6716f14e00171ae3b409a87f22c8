@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Portuguese101</title>
+</head>
+<body>
+	<p>
+		<strong>Hello and welcome to the wonderful world of Portugal!</strong>
+	</p>
+	<p id="inside">
+		first
+	</p>
+	<script>
+
+	function generateTable(){
+		document.getElementById("inside").innerHTML = "<tr><td>first value</td><td>second value</td></tr>";
+		
+	};
+	</script>
+	<button onclick="generateTable()">test</button>
+	
+	
+	<br>
+	<img alt="" src="https://www.easyjet.com/en/holidays/shared/images/guides/portugal.jpg"></img>
+	
+</body>
+</html>

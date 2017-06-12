@@ -1,0 +1,10 @@
+
+document.addEventListener('DOMContentLoaded', init, false);
+function init(){
+  function message () {
+    alert("Hello!");
+    console.log("Hello World")
+  }
+  var button = document.getElementById('test');
+  button.addEventListener('onclick', message, true);
+};
